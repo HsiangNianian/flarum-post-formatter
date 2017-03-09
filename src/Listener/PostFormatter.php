@@ -20,6 +20,10 @@ class PostFormatter
      */
     public function addHTMLBBCodeFormatter(ConfigureFormatter $event)
     {
+        // Unload the Escaper plugin
+        if($event->configurator->plugins->exists('Escaper'))
+            $event->configurator->plugins->delete('Escaper');
+
         $event->configurator->rootRules->enableAutoLineBreaks();
 
         $event->configurator->BBCodes->addFromRepository('B');
@@ -38,6 +42,7 @@ class PostFormatter
         $event->configurator->HTMLElements->allowElement('p');
         $event->configurator->HTMLElements->allowElement('a');
         $event->configurator->HTMLElements->allowElement('code');
+        $event->configurator->HTMLElements->allowAttribute('code', 'class');
         $event->configurator->HTMLElements->allowElement('pre');
         $event->configurator->HTMLElements->allowElement('img');
         $event->configurator->HTMLElements->allowElement('br');
