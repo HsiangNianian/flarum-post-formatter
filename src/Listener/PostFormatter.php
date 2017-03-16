@@ -37,8 +37,13 @@ class PostFormatter
         $event->configurator->BBCodes->add('LI');
 
         $event->configurator->HTMLElements->allowElement('b');
-        $event->configurator->HTMLElements->allowElement('i');
         $event->configurator->HTMLElements->allowElement('strong');
+        $event->configurator->HTMLElements->allowElement('i');
+        $event->configurator->HTMLElements->allowElement('em');
+        $event->configurator->HTMLElements->allowElement('strike');
+        $event->configurator->HTMLElements->allowElement('u');
+        $event->configurator->HTMLElements->allowElement('blockquote');
+        $event->configurator->HTMLElements->allowElement('center');
         $event->configurator->HTMLElements->allowElement('p');
         $event->configurator->HTMLElements->allowElement('a');
         $event->configurator->HTMLElements->allowElement('code');
@@ -46,6 +51,7 @@ class PostFormatter
         $event->configurator->HTMLElements->allowElement('pre');
         $event->configurator->HTMLElements->allowElement('img');
         $event->configurator->HTMLElements->allowElement('br');
+        $event->configurator->HTMLElements->allowElement('hr');
         $event->configurator->HTMLElements->allowElement('ol');
         $event->configurator->HTMLElements->allowElement('ul');
         $event->configurator->HTMLElements->allowElement('li');
