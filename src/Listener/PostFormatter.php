@@ -46,10 +46,12 @@ class PostFormatter
         $event->configurator->HTMLElements->allowElement('center');
         $event->configurator->HTMLElements->allowElement('p');
         $event->configurator->HTMLElements->allowElement('a');
+        $event->configurator->HTMLElements->allowAttribute('a', 'href');
         $event->configurator->HTMLElements->allowElement('code');
         $event->configurator->HTMLElements->allowAttribute('code', 'class');
         $event->configurator->HTMLElements->allowElement('pre');
         $event->configurator->HTMLElements->allowElement('img');
+        $event->configurator->HTMLElements->allowAttribute('img', 'src');
         $event->configurator->HTMLElements->allowElement('br');
         $event->configurator->HTMLElements->allowElement('hr');
         $event->configurator->HTMLElements->allowElement('ol');
