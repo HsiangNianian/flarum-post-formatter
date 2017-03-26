@@ -2,7 +2,11 @@
     "name": "cosname/flarum-post-formatter",
     "description": "Allow posts to be formatted and rendered with a subset of BBCode and HTML.",
     "type": "flarum-extension",
-    "keywords": ["formatting", "bbcode", "html"],
+    "keywords": [
+        "formatting",
+        "bbcode",
+        "html"
+    ],
     "license": "MIT",
     "authors": [
         {
