@@ -57,5 +57,7 @@ class PostFormatter
         $event->configurator->HTMLElements->allowElement('ol');
         $event->configurator->HTMLElements->allowElement('ul');
         $event->configurator->HTMLElements->allowElement('li');
+
+        $event->configurator->Preg->match('/\B@(?<username>[\x{2e80}-\x{3000}\x{3021}-\x{fe4f}a-z0-9_-]+)#(?<id>\d+)/iu', 'POSTMENTION');
     }
 }
