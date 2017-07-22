@@ -21,7 +21,7 @@ class PostFormatter
     public function addHTMLBBCodeFormatter(ConfigureFormatter $event)
     {
         // Unload the Escaper plugin
-        if($event->configurator->plugins->exists('Escaper'))
+        if ($event->configurator->plugins->exists('Escaper'))
             $event->configurator->plugins->delete('Escaper');
 
         $event->configurator->rootRules->enableAutoLineBreaks();
@@ -60,5 +60,15 @@ class PostFormatter
 
         $event->configurator->Preg->match('/\B@(?<username>[\x{2e80}-\x{3000}\x{3021}-\x{fe4f}a-z0-9_.-]+)#(?<id>\d+)/iu', 'POSTMENTION');
         $event->configurator->Preg->match('/\B@(?<username>[\x{2e80}-\x{3000}\x{3021}-\x{fe4f}a-z0-9_.-]+)(?!#)/iu', 'USERMENTION');
+
+        // Change highlight.js links
+        if ($event->configurator->tags->exists('CODE')) {
+            $code_tag_template = $event->configurator->tags->get('CODE')->getTemplate();
+            $content = $code_tag_template->__toString();
+            $content = preg_replace('#//cdnjs.+highlight\.js.+default\.min\.css#', '//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css', $content);
+            $content = preg_replace('#//cdnjs.+highlight\.min\.js#', '//uploads.cosx.org/static/hljs/highlight.pack.js', $content);
+            $code_tag_template->setContent($content);
+            $code_tag_template->isNormalized(TRUE);
+        }
     }
 }
