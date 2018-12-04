@@ -21,7 +21,7 @@
         "flarum-extension": {
             "title": "Post Formatter",
             "icon": {
-                "name": "commenting",
+                "name": "fas fa-comment-dots",
                 "backgroundColor": "#3ca156",
                 "color": "#eee"
             }
