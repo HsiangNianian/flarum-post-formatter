@@ -1,5 +1,5 @@
 {
-    "name": "HsiangNianian/flarum-post-formatter",
+    "name": "hsiangnianian/flarum-post-formatter",
     "description": "Allow posts to be formatted and rendered with a subset of BBCode and HTML.",
     "type": "flarum-extension",
     "keywords": [
