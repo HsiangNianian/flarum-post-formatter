@@ -1,5 +1,5 @@
 {
-    "name": "cosname/flarum-post-formatter",
+    "name": "HsiangNianian/flarum-post-formatter",
     "description": "Allow posts to be formatted and rendered with a subset of BBCode and HTML.",
     "type": "flarum-extension",
     "keywords": [
@@ -10,8 +10,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Yixuan Qiu",
-            "email": "yixuan.qiu@cos.name"
+            "name": "简律纯",
+            "email": "admin@jyunko.cn"
         }
     ],
     "require": {
