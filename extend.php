@@ -25,6 +25,8 @@ return [
             $config->BBCodes->add('LI');
         
             // Allowed HTML tags
+            $config->HTMLElements->allowElement('details');
+            $config->HTMLElements->allowAttribute('details', 'summary');
             $config->HTMLElements->allowElement('b');
             $config->HTMLElements->allowElement('strong');
             $config->HTMLElements->allowElement('i');
@@ -41,6 +43,7 @@ return [
             $config->HTMLElements->allowElement('pre');
             $config->HTMLElements->allowElement('img');
             $config->HTMLElements->allowAttribute('img', 'src');
+            $config->HTMLElements->allowAttribute('img', 'width');
             $config->HTMLElements->allowElement('br');
             $config->HTMLElements->allowElement('hr');
             $config->HTMLElements->allowElement('ol');
