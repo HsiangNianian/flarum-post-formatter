@@ -2,6 +2,7 @@
     "name": "hsiangnianian/flarum-post-formatter",
     "description": "Allow posts to be formatted and rendered with a subset of BBCode and HTML.",
     "type": "flarum-extension",
+    "homepage": "https://github.com/HsiangNianian/flarum-post-formatter/",
     "keywords": [
         "formatting",
         "bbcode",
@@ -16,7 +17,8 @@
         }
     ],
     "require": {
-        "flarum/core": "^1.0"
+        "flarum/core": "^1.0",
+        "s9e/text-formatter": "^2.0"
     },
     "extra": {
         "flarum-extension": {
