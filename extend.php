@@ -27,6 +27,7 @@ return [
             // Allowed HTML tags
             $config->HTMLElements->allowElement('details');
             $config->HTMLElements->allowAttribute('details', 'open');
+            $config->HTMLElements->allowElement('summary');
             $config->HTMLElements->allowElement('b');
             $config->HTMLElements->allowElement('strong');
             $config->HTMLElements->allowElement('i');
