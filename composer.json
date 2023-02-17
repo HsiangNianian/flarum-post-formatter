@@ -11,7 +11,8 @@
     "authors": [
         {
             "name": "简律纯",
-            "email": "admin@jyunko.cn"
+            "email": "admin@jyunko.cn",
+            "homepage": "https://academic.jyunko.cn"
         }
     ],
     "require": {
