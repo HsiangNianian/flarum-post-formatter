@@ -35,8 +35,12 @@ return [
             $config->HTMLElements->allowElement('strike');
             $config->HTMLElements->allowElement('u');
             $config->HTMLElements->allowElement('blockquote');
-            $config->HTMLElements->allowElement('center');
-            $config->HTMLElements->allowElement('p');
+            $config->HTMLElements->allowElement('iframe');
+
+$config->HTMLElements->allowAttribute('iframe', 'width');
+
+$config->HTMLElements->allowAttribute('iframe', 'height');
+           $config->HTMLElements->allowElement('p');
             $config->HTMLElements->allowElement('a');
             $config->HTMLElements->allowAttribute('a', 'href');
             $config->HTMLElements->allowElement('code');
