@@ -49,7 +49,9 @@ $config->HTMLElements->allowAttribute('iframe', 'height');
             $config->HTMLElements->allowElement('img');
             $config->HTMLElements->allowAttribute('img', 'src');
             $config->HTMLElements->allowAttribute('img', 'width');
-            $config->HTMLElements->allowElement('br');
+           
+           $config->HTMLElements->allowAttribute('img', 'align');
+ $config->HTMLElements->allowElement('br');
             $config->HTMLElements->allowElement('hr');
             $config->HTMLElements->allowElement('ol');
             $config->HTMLElements->allowElement('ul');
